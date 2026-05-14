@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Priyanshu Singh – Full Stack Developer.">
+  <title>Contact | Priyanshu Singh</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <span class="logo">PS</span>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main class="container">
+  <h2>Contact Me</h2>
+  <p>Have a project in mind or want to connect? Fill out the form below.</p>
+
+  <div id="form-success" role="alert">
+    ✅ Message sent! I'll get back to you soon.
+  </div>
+
+  <form id="contact-form" novalidate>
+    <div class="form-row">
+      <div>
+        <input type="text" id="name" placeholder="Your Name" data-required aria-label="Your Name">
+        <span class="error-msg" id="name-err">Name is required.</span>
+      </div>
+      <div>
+        <input type="email" id="email" placeholder="Your Email" data-required aria-label="Your Email">
+        <span class="error-msg" id="email-err">Email is required.</span>
+      </div>
+    </div>
+    <input type="text" id="subject" placeholder="Subject" data-required aria-label="Subject">
+    <span class="error-msg" id="subject-err">Subject is required.</span>
+    <textarea id="message" rows="5" placeholder="Your Message" data-required aria-label="Your Message"></textarea>
+    <span class="error-msg" id="message-err">Message is required.</span>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</main>
+
+<footer>
+  <p>© 2026 Priyanshu Singh · <a href="mailto:priyanshu@example.com">priyanshu@example.com</a></p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
